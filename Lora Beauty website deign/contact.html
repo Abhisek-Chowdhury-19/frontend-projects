@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lora Beauty- Contact</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/bootstrap-icons.svg">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+
+            <div class="nav">
+                <a href="../">
+                    <img src="assets/img/logo.png">
+                </a>
+                <div class="links">
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-nav">
+                    <i class="bi bi-list" onclick="show()"></i>
+                </div>
+            </div>
+            <div class="mobilemenu">
+                <i class="bi bi-x-lg" onclick="hello()"></i>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="hero-head">
+        <h1>
+
+            Contact.
+        </h1>
+    </div>
+    <div class="contact">
+        <h1>
+            Fill the contact from to get in Touch with Lora
+        </h1>
+        <div class="sucess" id="sucess">
+            Thanks we will get back to you soon
+        </div>
+        <form onsubmit='return formdata()'>
+            <label for="full_name">Full Name</label>
+            <br>
+
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contact_number">Contact Number</label>
+            <br>
+            <input type="tel" id="contact_number" name="contact_number" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit" class="subbutton">
+        </form>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9423.144845061692!2d-1.517075!3d53.8110878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795d3998aabdad%3A0xefa60c418917839d!2sLora%20Beauty%20unisex%20salon!5e0!3m2!1sen!2sin!4v1697553073520!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="branding">
+                <img src="assets/img/logo.png" alt="">
+                <h1>
+                    Opening Hours
+
+                </h1>
+                <ul>
+                    <li>
+                        Mon-Sat:
+                    </li>
+                    <li>
+                        10:00 am – 6:00 pm
+                    </li>
+
+                    <li>
+                        Sun:
+                    </li>
+                    <li>
+                        9:00 am – 5:00 pm(Pre Booking only)
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        Designed by - <a href="https://thewebtrix.co.uk/" target="_blank"
+                            style="font-weight: 900;">Thewebtrix.co.uk</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="branding">
+
+                <h1>
+                    Links
+
+                </h1>
+                <ul>
+                    <li>
+                        <a href="../"> Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li>
+                    <li>
+                        <a href="service.html"> Services</a>
+
+                    </li>
+                    <li>
+                        <a href="portfolio.html"> Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"> Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="branding connect">
+
+                <h1>
+                    Let's Connect
+                </h1>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/Lora.beauty.leeds" target="_blank"> <i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=1111111&text&type=phone_number&app_absent=0"
+                            target="_blank"> <i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/loracharley5/" target="_blank"> <i
+                                class="bi bi-instagram"></i></a>
+
+                    </li>
+                    <li class="knife">
+                        <img src="assets/img/knife.png" alt="">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Fq8g9IdVz2CfTVw4p");
+        })();
+
+        function formdata() {
+
+
+            var full_name = document.getElementById('full_name').value
+            var email = document.getElementById('email').value
+            var contact_number = document.getElementById('contact_number').value
+            var message = document.getElementById('message').value
+
+            var templateParams = {
+                name: full_name,
+                messages: message,
+                contact: contact_number,
+                emails: email,
+            };
+            console.log(templateParams.name)
+            console.log(templateParams.messages)
+
+            console.log(templateParams.contact)
+            console.log(templateParams.emails)
+
+            emailjs.send('service_uhxxbax', 'template_3dzx0yk', templateParams)
+                .then(function (response) {
+                    var sucess = document.querySelector('.sucess')
+                    sucess.style.display = 'block'
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.querySelector('.hero-head').scrollIntoView();
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+            return false;
+        }
+    </script>
+    <script>
+        function hello() {
+            var close = document.querySelector('.mobilemenu')
+            close.style.opacity = 0
+            close.style.visibility = 'hidden';
+        }
+        function show() {
+            var unhide = document.querySelector('.mobilemenu')
+            unhide.style.opacity = 1
+            unhide.style.visibility = 'visible';
+        }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

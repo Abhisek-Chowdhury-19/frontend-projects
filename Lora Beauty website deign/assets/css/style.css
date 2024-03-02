@@ -1,0 +1,849 @@
+@font-face {
+    font-family: popli-med;
+    src: url('../font/Poppins-ExtraLight.ttf');
+}
+@font-face {
+    font-family: boldtitle;
+    src: url(../font/AbhayaLibre-SemiBold.ttf);
+}
+*{
+   
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+::selection{
+    color: white;
+    background-color: rgb(237, 120, 139);
+}
+
+.whatsapp{
+    position: fixed;
+    top: 80%;
+    left: 90%;
+  
+}
+.whatsapp i{
+  display: inline;
+}
+.text-help{
+  background-color: wheat;
+  color: black;
+  display: block;
+
+}
+.circle-ripple {
+    background-color: #42db87;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite;
+    color: white;
+    padding: 16px;
+    font-size: 3.5vw;
+    
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 #42db87;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+    z-index: 30;
+  }
+  
+  @keyframes pulsing {
+    to {
+        box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+      }
+  }
+  @media (max-width:1000px) {
+    .circle-ripple {
+    font-size: 4vw;
+    }
+    .whatsapp{
+      position: fixed;
+      top: 80%;
+      left: 75%;
+      z-index: 99999;
+  }
+  }
+  @media (max-width:500px) {
+    .circle-ripple {
+    font-size: 8vw;
+    }
+  }
+.main{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+   
+}
+.nav-bar{
+    font-family: popli-med;
+
+    padding-left: 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    z-index: 99999;
+    position: fixed;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.nav img{
+    height: 100px;
+}
+.nav .links ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove default list style */
+}
+
+.nav .links ul li {
+    display: inline; /* Display list items on the same line */
+    font-size: 1.3vw;
+    color: white;
+    line-height: 100px;
+    margin-right: 30px; /* Add some space between the items if needed */
+}
+.main-contain
+{
+    font-family: boldtitle;
+    width: 100%;
+    background-image:linear-gradient(to bottom, rgba(37, 37, 37, 0.792) 0%, rgba(63, 63, 63, 0.418) 70%) , url(../img/banner.jpg) ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 1s ease-in-out; /* Add a smooth transition effect */
+}
+.main-contain h2{
+    padding-top: 40vh;
+   
+}
+.main-contain h2{
+    font-size: 3vw;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.main-contain h1{
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/* Define a basic CSS class for pop-up animation */
+.pop-up {
+    transform: translateY(100px); /* Start with elements positioned lower */
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Add a class for fully visible elements */
+.pop-up.visible {
+    transform: translateY(0); /* Bring elements back to their original position */
+    opacity: 1;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-contain>button{
+    margin-top: 20px;
+    font-family: popli-med;
+    font-weight: 900;
+    font-size: 1.3vw;
+    background-color: rgb(237, 120, 139);
+color: white;
+padding: 15px;
+border: none;
+border-radius: 10px;
+   margin-left: 40vw;
+   transition: 0.3s;
+
+}
+.main-contain>button:hover{
+        scale: 1.1;
+        background-color: red;
+
+}
+.contact-sec{
+    color: white;
+    padding: 5vw;
+}
+
+.con-sec{
+    font-family: popli-med;
+
+    width: 30%;
+    font-size: 1.5vw;
+    float: left;
+    text-align: center;   
+}
+.con-sec i{
+    padding: 10px;
+}
+.about-me{
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    height: 400px;
+    max-height: 550px;
+    float: left;
+}
+.about-me h1{
+    padding-top: 55%;
+    text-align: center;
+    font-family: boldtitle;
+    
+   
+}
+.about-sec {
+    height: auto;
+    overflow: hidden;
+}
+.about-sec img{
+    float: left;
+    height: 60vh;
+}
+.about-text{
+    width: 40%;
+    float: left;
+    padding-left: 2%;
+    font-family: popli-med;
+    color: white;
+}
+.about-text h2{
+    
+    font-size: 3vw;
+}
+.about-text p{
+    padding: 2%;
+}
+.about-text button{
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.3vw;
+    background-color: rgb(237, 120, 139);
+color: white;
+border: none;
+border-radius: 10px;
+transition: 0.3s;
+}
+.about-text button:hover{
+    scale: 1.1;
+    background-color: red;
+}
+.service-sec-1{
+    font-family: popli-med;
+    padding: 5vw;
+   height: auto;
+   overflow: hidden;
+    color: white;
+}
+.service-text{
+    width: 50%;
+    float: left;
+}
+.service-sec-1 h3{
+    font-size: 2vw;  
+}
+.service-text p {
+    line-height: 30px;
+}
+.serv{
+    width: 20%;
+    border-bottom:  2px solid salmon;
+}
+.service-text button{
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.3vw;
+    background-color: rgb(237, 120, 139);
+color: white;
+border: none;
+border-radius: 10px;
+transition: 0.3s;
+}
+.service-text button:hover{
+    scale: 1.1;
+    background-color: red;
+}
+.service-sec-1 img{
+    padding: 3%;
+    float: left;
+    height: 400px;
+}
+.review{
+    padding: 5vw;
+    color: white;
+    font-family: popli-med;
+    text-align: center;
+}
+.review-card{
+color: white;
+    padding: 10px;
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+    margin-bottom:50px;
+}
+.review-card img{
+    border-radius: 50%;
+}
+.review-card i{
+    color: salmon;
+    margin-right: 2px;
+}
+.foot{
+    padding: 5vw;
+    color: white;
+    font-family: popli-med;
+    
+}
+.branding{
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+.branding img{
+width: 40%;
+}
+.branding ul li{
+    
+    list-style: none; /* Remove default list style */
+    margin-top: 10px;
+}
+.branding a{
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+    
+}
+.branding a:hover{
+   border-bottom: 1px solid white;
+}
+.connect a{
+    border: none !important;
+}
+.branding ul li i{
+    margin-right: 20px;
+}
+.knife img{
+    width: 70%;
+}
+.mobile-nav{
+    display: none;
+}
+.portfolio-box{
+    padding: 5vw;
+
+}
+.prortfolio-card{
+    overflow: hidden;
+    border-radius: 20px;
+    width: 30%;
+    margin: 10px;
+    height: 300px;
+    float: left;
+    background-color: rgba(238, 160, 151, 0.637);
+}
+.portfolio-card-2{
+    float: left;
+    width: 100%;
+    margin: 10px;
+    height: 600px;
+    font-family: popli-med;
+  
+   
+   
+}
+.box-1{
+    margin: 20px;
+    width: 30%;
+    height: 90%;
+    float: left;
+    background: url(../img/portfolio/Boxbraids.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    overflow: hidden;
+}
+.box-2{
+    overflow: hidden;
+    margin: 10px;
+    width: 30%;
+    height: 45%;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+.box-1-1{
+    margin: 20px;
+    width: 30%;
+    height: 90%;
+    float: left;
+    background: url(../img/portfolio/Ponytails.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    overflow: hidden;
+}
+.box-2-2{
+    overflow: hidden;
+    margin: 10px;
+    width: 30%;
+    height: 45%;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+
+.box-1-2{
+    margin: 20px;
+    width: 30%;
+    height: 90%;
+    float: left;
+    background: url(../img/portfolio/wig.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    overflow: hidden;
+}
+.box-2-3{
+    overflow: hidden;
+    margin: 10px;
+    width: 30%;
+    height: 45%;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+.box-2-3:nth-child(2){
+    background: url(../img/portfolio/wigs2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-3:nth-child(3){
+    background: url(../img/portfolio/Interlock.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-3:nth-child(4){
+    background: url(../img/portfolio/Braiding.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-3:nth-child(5){
+    background: url(../img/portfolio/Kinky\ \ twist.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box-2-2:nth-child(2){
+    background: url(../img/portfolio/Pik\ and\ drop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-2:nth-child(3){
+    background: url(../img/portfolio/Boys\ \ hair\ style.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-2:nth-child(4){
+    background: url(../img/portfolio/Bride\ hair\ style\ 2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.box-2-2:nth-child(5){
+    background: url(../img/portfolio/Kids\ conrows\ 2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box-2:nth-child(2){
+    background: url(../img/portfolio/test1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box-2:nth-child(3){
+    background: url(../img/portfolio/Bride\ hair\ style.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box-2:nth-child(4){
+    background: url(../img/portfolio/Shorts\ conrows.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box-2:nth-child(5){
+    background: url(../img/portfolio/Stich\ conrows.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.overflow-text{
+    /* transform: translateY(100%); */
+    opacity: 0;
+    background-color: #333333b9;
+    text-align: center;
+    height: 100%;
+    padding-top: 40%;
+    font-size: xx-large;
+    color: white;
+    transition: 0.3s;
+}
+.box-2:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.box-2-2:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.box-2-3:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.box-1:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.box-1-1:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.box-1-2:hover .overflow-text{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.img-sec {
+    height: 70%;
+    overflow: hidden;
+}
+.img-sec img{
+    width: 100%;
+}
+.mobilemenu{
+    z-index: 99999;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    display: none;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.title{
+    text-align: center;
+    font-size: xx-large;
+    font-family: popli-med;
+    color: white;
+    font-weight: 600;
+    line-height: 190%;
+
+}
+.mobilemenu i{
+    float: right;
+    padding-right: 10%;
+    padding-top: 20%;
+}
+.mobilemenu a{
+    text-decoration: none;
+    color: white;
+}
+.mobilemenu ul{
+    padding-top: 30vh;
+}
+.hero-head{
+    height: 40vh;
+    background: url(../img/herobanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hero-head h1{
+    padding-left: 4%;
+    font-size: 5vw;
+    font-family: popli-med;
+
+    line-height: 40vh;
+}
+.contact{
+    font-family: popli-med;
+    padding: 5vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none; /* Remove the focus outline */
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(237, 120, 139);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product{
+    padding: 5vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: popli-med;
+
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+.sucess{
+    background-color: #15ef7759;
+    display: none;
+}
+@media (max-width:1000px) {
+    .portfolio-card-2{
+        float: left;
+        width: 100%;
+        margin: 10px;
+        height: 2000px;
+        font-family: popli-med;
+      
+       
+       
+    }
+    
+    .overflow-text{
+        height: 100%;
+    }
+    .box-1{
+        margin: 20px;
+        width: 90%;
+        height: 30%;
+        float: left;
+        background: url(../img/portfolio/Boxbraids.jpg);
+        background-repeat: no-repeat;
+    
+        background-size: 100%;
+        overflow: hidden;
+    }
+    .box-2{
+        overflow: hidden;
+        margin: 10px;
+        width: 90%;
+        height: 15%;
+        float: left;
+        background-repeat: no-repeat;
+    
+    }
+    .box-1-1{
+        margin: 20px;
+        width: 90%;
+        height: 30%;
+        float: left;
+      
+        background-repeat: no-repeat;
+    
+        background-size: 100%;
+        overflow: hidden;
+    }
+    .box-2-2{
+        overflow: hidden;
+        margin: 10px;
+        width: 90%;
+        height: 15%;
+        float: left;
+        background-repeat: no-repeat;
+    
+    }
+    .box-1-2{
+        margin: 20px;
+        width: 90%;
+        height: 30%;
+        float: left;
+      
+        background-repeat: no-repeat;
+    
+        background-size: 100%;
+        overflow: hidden;
+    }
+    .box-2-3{
+        overflow: hidden;
+        margin: 10px;
+        width: 90%;
+        height: 15%;
+        float: left;
+        background-repeat: no-repeat;
+    
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .main-contain h2{
+        font-size: 5vw;
+    }
+    .main-contain h1{
+        font-size: 5vw;
+    }
+    .main-contain button{
+        font-size: 4vw;
+        margin-left: 25%;
+    }
+    .links{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        line-height: 100px;
+    }
+    .mobile-nav i{
+        color: white;
+        background-color: salmon;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        font-size: 3.8vw;
+    }
+    .mobilemenu{
+        transition: 0.5s;
+        display: block;
+    }
+    .mobilemenu ul li{
+        margin: 10px;
+        
+    }
+    .nav-bar{
+        padding: 0;
+    }
+    .con-sec{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 40px;
+        font-size: 3.5vw;
+        float: none;
+    }
+    .about-me{
+        width: 100%;
+        height: 200px;
+    }
+    .about-me h1{
+        padding: 0;
+        line-height: 200px;
+    }
+    .about-sec img{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .about-text{
+        margin-top: 30px;
+     padding: 0%;
+     margin-left: 5%;
+        font-size: 2.5vw;
+        width: 90%;
+    }
+    .about-text h2{
+        font-size: 5vw;
+    }
+    .about-text button{
+        font-size: 3vw;
+    }
+    .service-text{
+        width: 90%;
+    }
+    .service-text button{
+        font-size: 3vw;
+
+    }
+    .serv h3{
+font-size: 3.7vw;
+    }
+    .service-sec-1 img{
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 10%;
+        height: auto;
+        padding: 0;
+    }
+    .review-card{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+    }
+    .branding 
+    {
+        width: 50%;
+        padding: 0;
+    }
+    .about-text p{
+        font-size: 3vw;
+    }
+}
+@media (max-width:650px) {
+    .mobile-nav i{
+        font-size: 6vw;
+    }
+}
+
+
